@@ -1,0 +1,11 @@
+# The whole dependency list. Keeping it this short is part of the project.
+#
+# Nothing that computes a gradient may be added here. Not torch, not jax,
+# not autograd. Not in tests, not in scratch scripts.
+ 
+numpy==2.3.5
+pytest==8.4.2
+ 
+# matplotlib is allowed from Unit 7 onward, for loss curves only.
+# Uncomment when you get there.
+# matplotlib==3.10.7
