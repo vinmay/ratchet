@@ -26,7 +26,6 @@ def test_environment():
 # ---------------------------------------------------------------------------
 
 
-@pytest.mark.skip(reason="Unit 1: not implemented yet")
 def test_forward_arithmetic():
     from micrograd.engine import Value
 
@@ -37,7 +36,6 @@ def test_forward_arithmetic():
     assert (a * b + c).data == 4.0
 
 
-@pytest.mark.skip(reason="Unit 1: not implemented yet")
 def test_reflected_operators():
     from micrograd.engine import Value
 
@@ -47,7 +45,6 @@ def test_reflected_operators():
     assert (2 + x).data == 5.0
 
 
-@pytest.mark.skip(reason="Unit 1: not implemented yet")
 def test_children_are_tracked():
     from micrograd.engine import Value
 

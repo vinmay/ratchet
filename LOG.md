@@ -24,3 +24,5 @@ thing. You do not reread the syllabus and you do not restart.
 ---
 
 2026-09-02  U1  Repo scaffolded. Docs, deps, test harness green. Next: `Value.__init__` with data, grad, _prev.
+
+2026-09-03  U1  `Value` with `data` and `_prev`. `__add__`/`__mul__` coerce int/float operands and record parents; `__radd__`/`__rmul__` delegate. Leaves get an empty set. Tests 1-3 green. Next: `topo_sort(node)` as a module-level function — DFS over `_prev`, append each node after its children, skip nodes already in a visited set.
