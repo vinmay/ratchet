@@ -56,8 +56,27 @@ def test_children_are_tracked():
     assert b in c._prev
     assert len(c._prev) == 2
 
+def test_repr_is_a_readable_string():
+    from micrograd.engine import Value
 
-@pytest.mark.skip(reason="Unit 1: not implemented yet")
+    v = Value(4.0)
+    s = repr(v)
+
+    assert isinstance(s, str)
+    assert "4.0" in s
+    assert "Value" in s
+    assert "object at 0x" not in s          # not the default repr
+
+def test_repr_does_not_recurse_into_parents():
+    """A repr that prints _prev blows the stack on any real graph."""
+    from micrograd.engine import Value
+
+    a, b, c = Value(2.0), Value(-3.0), Value(10.0)
+    out = a * b + c
+
+    repr(out._prev)                          # would RecursionError if it walked parents
+    assert len(repr(out)) < 60               # one node's worth, not the graph
+
 def test_topo_sort_orders_parents_first():
     from micrograd.engine import Value, topo_sort
 
@@ -72,8 +91,6 @@ def test_topo_sort_orders_parents_first():
     assert order.index(c) < order.index(d)
     assert order[-1] is d
 
-
-@pytest.mark.skip(reason="Unit 1: not implemented yet")
 def test_shared_node_appears_once():
     """The diamond case. `x` is used twice but is one node in the graph.
 

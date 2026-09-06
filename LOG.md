@@ -26,3 +26,5 @@ thing. You do not reread the syllabus and you do not restart.
 2026-09-02  U1  Repo scaffolded. Docs, deps, test harness green. Next: `Value.__init__` with data, grad, _prev.
 
 2026-09-03  U1  `Value` with `data` and `_prev`. `__add__`/`__mul__` coerce int/float operands and record parents; `__radd__`/`__rmul__` delegate. Leaves get an empty set. Tests 1-3 green. Next: `topo_sort(node)` as a module-level function — DFS over `_prev`, append each node after its children, skip nodes already in a visited set.
+
+2026-09-05  U1  Unit 1 done bar one line. `__repr__`, and `topo_sort` as a module-level function — recursive DFS over `_prev`, visited set, append after children. All 8 tests green including the diamond. `micrograd/draw.py` prints the graph as a tree and marks shared nodes. Next: `self.grad = 0.0` in `Value.__init__` — the last Unit 1 checklist item — then Unit 2 opens with a `_backward` closure on `__add__`.
