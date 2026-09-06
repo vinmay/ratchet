@@ -125,11 +125,11 @@ can appear twice in one expression (`x * x`).
 
 ## Unit 2 — Backward, and the checker
 
-- [ ] `_backward` closures on `+` and `*`
-- [ ] `backward()` walking the reversed topo order, seeding `self.grad = 1.0`
-- [ ] `grad_check(f, x)` using central differences
-- [ ] `pow`, `tanh`, `exp`, `relu` with gradcheck passing on each
-- [ ] `tests/test_gradcheck.py` with one test per primitive
+- [x] `_backward` closures on `+` and `*`
+- [x] `backward()` walking the reversed topo order, seeding `self.grad = 1.0`
+- [x] `grad_check(f, x)` using central differences
+- [x] `pow`, `tanh`, `exp`, `relu` with gradcheck passing on each
+- [x] `tests/test_gradcheck.py` with one test per primitive
 
 **Math arrives:** chain rule, eight primitive derivatives.
 

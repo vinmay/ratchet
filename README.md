@@ -123,8 +123,8 @@ the repository since the first commit.
 | Unit | Status |
 |---|---|
 | 1. Expression graph | done |
-| 2. Backward + checker | in progress |
-| 3. Train an MLP | |
+| 2. Backward + checker | done |
+| 3. Train an MLP | in progress |
 | 4. Break it | |
 | 5. Tensors | |
 | 6. Layers + MNIST | |

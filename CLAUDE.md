@@ -12,7 +12,7 @@ understanding, not for the code being correct or finished quickly.
 
 ## Current unit
 
-**Unit: 2**
+**Unit: 3**
 
 This line is the gate. Check it before doing anything. I update it when a unit
 is done.
