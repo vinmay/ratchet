@@ -107,11 +107,11 @@ Units, not weeks. If a unit takes nine days, it took nine days.
 
 ## Unit 1 — The expression graph
 
-- [ ] `Value` class holding `data`, `grad`, `_prev`
-- [ ] `__add__`, `__mul__`, plus `__radd__` / `__rmul__` for `2 * x`
-- [ ] `__repr__` that prints usefully
-- [ ] `topo_sort()` returning nodes in dependency order
-- [ ] A drawn or printed graph of `a*b + c`
+- [x] `Value` class holding `data`, `grad`, `_prev`
+- [x] `__add__`, `__mul__`, plus `__radd__` / `__rmul__` for `2 * x`
+- [x] `__repr__` that prints usefully
+- [x] `topo_sort()` returning nodes in dependency order
+- [x] A drawn or printed graph of `a*b + c`
 
 **Math needed:** none.
 

@@ -122,8 +122,8 @@ the repository since the first commit.
 
 | Unit | Status |
 |---|---|
-| 1. Expression graph | in progress |
-| 2. Backward + checker | |
+| 1. Expression graph | done |
+| 2. Backward + checker | in progress |
 | 3. Train an MLP | |
 | 4. Break it | |
 | 5. Tensors | |
@@ -146,6 +146,7 @@ ratchet/
   LOG.md               # one line per session
   micrograd/           # Units 1-4: scalar autograd
     engine.py
+    draw.py
     nn.py
   tensorgrad/          # Units 5-7: array autograd
     tensor.py
@@ -158,7 +159,7 @@ ratchet/
     train.py
     sample.py
   tests/
-    test_gradcheck.py
+    test_grad_check.py
 ```
 
 ## Running it
