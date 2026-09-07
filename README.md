@@ -124,8 +124,8 @@ the repository since the first commit.
 |---|---|
 | 1. Expression graph | done |
 | 2. Backward + checker | done |
-| 3. Train an MLP | in progress |
-| 4. Break it | |
+| 3. Train an MLP | done |
+| 4. Break it | in progress |
 | 5. Tensors | |
 | 6. Layers + MNIST | |
 | 7. Optimizers | |
@@ -144,10 +144,12 @@ ratchet/
   SYLLABUS.md          # the full plan, with definitions of done
   CLAUDE.md            # what a coding agent may and may not write here
   LOG.md               # one line per session
+  train.py             # Unit 3: the training loop
   micrograd/           # Units 1-4: scalar autograd
     engine.py
-    draw.py
     nn.py
+    data.py
+    draw.py
   tensorgrad/          # Units 5-7: array autograd
     tensor.py
     layers.py
@@ -160,6 +162,7 @@ ratchet/
     sample.py
   tests/
     test_grad_check.py
+    test_nn.py
 ```
 
 ## Running it
